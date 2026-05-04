@@ -4,61 +4,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HD! - Колония (2026) смотреть онлайн</title>
 
-<!-- убираем "404" из адреса -->
+<title>Смотреть онлайн</title>
 
 <script>
-history.replaceState(null, null, window.location.pathname);
+// получаем slug из URL
+let slug = window.location.pathname
+  .replace(/\//g, '')
+  .replace(/[-_]/g, ' ')
+  .replace(/[^\w\sа-яА-Я]/g, '')
+  .trim();
+
+// если пусто
+if (!slug) {
+  slug = "Колония 2026";
+}
+
+// делаем первую букву большой
+slug = slug.charAt(0).toUpperCase() + slug.slice(1);
+
+// итоговый текст
+const titleText = slug + " смотреть онлайн";
+
+// ставим title
+document.title = titleText;
+
+// вставляем в страницу
+window.onload = function() {
+  document.getElementById("title").innerText = titleText;
+};
 </script>
 
-<link rel="icon" href="/Pic/ava.png" type="image/png">
-<script src="https://cdn.tailwindcss.com"></script>
-
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-
 body {
-    background:#050505;
-    color:#e5e7eb;
-    font-family:'Inter', sans-serif;
-    margin:0;
-}
-
-.header {
-    background:#000;
-    padding:20px;
-    text-align:center;
-    font-weight:900;
-    font-size:24px;
-}
-
-.container {
-    max-width:900px;
-    margin:40px auto;
-    padding:20px;
-    text-align:center;
+  background:#000;
+  color:#fff;
+  font-family:Arial;
+  text-align:center;
+  padding:50px;
 }
 
 .btn {
-    background:linear-gradient(135deg,#ffcc00,#ff9900);
-    padding:15px 30px;
-    border-radius:15px;
-    color:#000;
-    font-weight:900;
-    text-decoration:none;
-    display:inline-block;
-    margin-top:20px;
-}
-
-.btn:hover {
-    transform:translateY(-2px);
-}
-
-.desc {
-    margin-top:30px;
-    color:#aaa;
-    line-height:1.6;
+  background:#ffcc00;
+  padding:15px 30px;
+  border-radius:10px;
+  color:#000;
+  font-weight:bold;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:20px;
 }
 </style>
 
@@ -66,27 +60,11 @@ body {
 
 <body>
 
-<div class="header">
-Колония (2026)
-</div>
-
-<div class="container">
-
-<h1>Колония (2026) смотреть онлайн</h1>
+<h1 id="title">Загрузка...</h1>
 
 <a href="https://n5bc.shop/3/rd.php?url=/t/6OX8YoJsH" class="btn">
-▶ Смотреть онлайн
+▶ Смотреть
 </a>
-
-<div class="desc">
-<p>
-Колония (2026) смотреть онлайн бесплатно в хорошем качестве.  
-Вы можете смотреть фильм без регистрации и подписки.  
-Доступны разные качества и устройства для просмотра.
-</p>
-</div>
-
-</div>
 
 </body>
 </html>
