@@ -1,70 +1,10 @@
 <!DOCTYPE html>
-
-<html lang="ru">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Смотреть онлайн</title>
-
 <script>
-// получаем slug из URL
-let slug = window.location.pathname
-  .replace(/\//g, '')
-  .replace(/[-_]/g, ' ')
-  .replace(/[^\w\sа-яА-Я]/g, '')
-  .trim();
-
-// если пусто
-if (!slug) {
-  slug = "Колония 2026";
-}
-
-// делаем первую букву большой
-slug = slug.charAt(0).toUpperCase() + slug.slice(1);
-
-// итоговый текст
-const titleText = slug + " смотреть онлайн";
-
-// ставим title
-document.title = titleText;
-
-// вставляем в страницу
-window.onload = function() {
-  document.getElementById("title").innerText = titleText;
-};
+var path = window.location.pathname;
+window.location.href = "/?slug=" + encodeURIComponent(path);
 </script>
-
-<style>
-body {
-  background:#000;
-  color:#fff;
-  font-family:Arial;
-  text-align:center;
-  padding:50px;
-}
-
-.btn {
-  background:#ffcc00;
-  padding:15px 30px;
-  border-radius:10px;
-  color:#000;
-  font-weight:bold;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:20px;
-}
-</style>
-
 </head>
-
-<body>
-
-<h1 id="title">Загрузка...</h1>
-
-<a href="https://n5bc.shop/3/rd.php?url=/t/6OX8YoJsH" class="btn">
-▶ Смотреть
-</a>
-
-</body>
+<body></body>
 </html>
