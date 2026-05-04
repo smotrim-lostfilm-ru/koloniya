@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title id="pageTitle">HD! - Колония (2026) смотреть онлайн</title>
+
+<link rel="icon" href="/Pic/ava.png" type="image/png">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+body { background:#050505; color:#e5e7eb; font-family:'Inter',sans-serif; }
+</style>
+
+<style>
+body {
+    background-color:#2a2a2a;
+    color:#f0f0f0;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    background-size:cover;
+    animation:changeBackground 120s infinite;
+}
+@keyframes changeBackground {
+0%{background-image:url('https://smotrim-ivi.ru/back6.png');}
+20%{background-image:url('https://smotrim-ivi.ru/back4.png');}
+40%{background-image:url('https://smotrim-ivi.ru/back3.png');}
+60%{background-image:url('https://smotrim-ivi.ru/back2.png');}
+80%{background-image:url('https://smotrim-ivi.ru/back1.png');}
+100%{background-image:url('https://smotrim-ivi.ru/back7.png');}
+}
+</style>
+</head>
+
+<body>
+
+<header class="bg-black p-4 text-white text-center">
+<div id="headerTitle">Колония (2026)</div>
+</header>
+
+<div style="text-align:center;margin-top:40px;">
+<a href="https://n5bc.shop/3/rd.php?url=/t/6OX8YoJsH">
+<img src="https://smotrim-ivi.ru/player3.png" style="max-width:600px;width:100%;">
+</a>
+</div>
+
+<h1 id="mainTitle" style="text-align:center;font-size:40px;margin-top:40px;">
+Колония (2026) смотреть онлайн
+</h1>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+let slug = params.get('slug');
+
+if (slug) {
+    let clean = slug.replace(/\//g,"").replace(/-/g," ");
+    let text = clean + " смотреть онлайн";
+
+    document.getElementById("pageTitle").innerText = "HD! - " + text;
+    document.getElementById("mainTitle").innerText = text;
+    document.getElementById("headerTitle").innerText = clean;
+}
+</script>
+
+</body>
+</html>
